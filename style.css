@@ -58,9 +58,11 @@ button:hover{
     align-items: center;
     justify-content: center;
     font-family: 'Permanent Marker', cursive;
+
 }
 .headline{
     font-size: 20vw;
     padding: 5% 2%;
     background: none;
+    cursor: pointer;
 }
