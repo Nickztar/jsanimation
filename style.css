@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +20,9 @@ header{
     align-items: center;
     padding: 30px 10%;
     max-height: 10vh;
+}
+.hamburger{
+    display:none;
 }
 .logo{
     cursor: pointer;
@@ -65,4 +69,30 @@ button:hover{
     padding: 5% 2%;
     background: none;
     cursor: pointer;
+}
+footer{
+    height: 5vh;
+    background: #24252A;
+    color: rgb(69, 71, 80);
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 750px){
+    .nav_links, .cta{
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+        cursor: pointer;
+        font-size: 5vh;
+        color: #edf0f1;    
+    }
+
+    .nav_links.temp{
+        display: flex;
+        flex-direction: column;
+        background-color: #24252A;
+    }
+    
 }
